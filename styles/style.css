@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --cor-logo: #3A404E;
+    --cor-primaria: #101828;
+    --cor-secundaria: #667085;
+    --cor-terciaria: #8E2424;
+    --cor-terciaria-opaca: rgba(142,36,36,0.05);
+    --branco: #FFFFFF;
+    --cor-quarta: #EAECF0;
+    --cor-quinta: #98A2B3;
+    --cor-sexta: #F9FAFB;
+    --cor-sete: #D0D5DD;
+
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+}
+
+.cabecalho {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5em;
+}
+
+.logo-texto {
+    color: var(--cor-logo);
+    font-size: 18px;
+    margin-left: 0.5em;
+}
+
+.menu__lista {
+    display: flex;
+    margin-left: 5em;
+}
+
+.menu__lista-opcoes {
+    list-style: none;
+    padding-left: 2em;
+    font-size: 16px;
+}
+
+.menu__lista-link {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.menu__lista-botao {
+    text-decoration: none;
+    background-color: var(--cor-terciaria);
+    padding: 0.75em;
+    border-radius: 0.75em;
+    color: var(--branco);
+    font-size: 16px;
+}
+
+.login__menu {
+    display: flex;
+    margin: 0 0 0 40vw;
+}
+
+.sobre-nos {
+    text-align: center;
+    margin: 7em;
+    padding: 0 26em;
+}
+
+.sobre-nos__titulo {
+    color: var(--cor-terciaria);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sobre-nos__titulo-principal {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+
+.sobre-nos__texto {
+    color: var(--cor-secundaria);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.numeros {
+    display: flex;
+}
+
+.numeros__detalhe {
+    margin: 0 5em 5em 5em;
+    list-style: none;
+}
+
+.numeros__detalhe-numero {
+    color: var(--cor-terciaria);
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 0.25em;
+}
+
+.numeros__detalhe-titulo {
+    color: var(--cor-primaria);
+    font-size: 18px;
+    margin-bottom: 0.5em;
+}
+
+.numeros__detalhe-texto {
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.talentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.talentos__vagas {
+    color: var(--cor-terciaria);
+    background-color: var(--cor-terciaria-opaca);
+    border-radius: 1em;
+    padding:  0.5em 1em;
+    font-size: 14px;
+}
+
+.talentos__titulo {
+    color: var(--cor-primaria);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.talentos__texto {
+    color: var(--cor-secundaria);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 3em;
+}
+
+.vagas {
+    margin: 0 35vw;
+}
+
+.vagas__titulo {
+    color: var(--cor-primaria);
+    font-size: 20px;
+    margin-top: 3em;
+}
+
+.vagas__caixa {
+    border: solid var(--cor-quarta) 0.01em;
+    border-radius: 1em;
+    padding: 0 1em;
+    margin-bottom: 1em;
+}
+
+.vagas__caixa-titulo {
+    color: var(--cor-primaria);
+    font-size: 18px;
+}
+
+.vagas__caixa-info {
+    display: flex;
+}
+
+.vagas__caixa-texto {
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    margin-right: 2em;
+}
+
+.relato {
+    background-color: var(--cor-terciaria-opaca);
+    border-radius: 1em;
+    padding: 5em;
+    margin: 8em;
+    text-align: center;
+}
+
+.relato-veja {
+    color: var(--cor-terciaria);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.relato-texto {
+    color: var(--cor-primaria);
+    font-size: 36px;
+}
+
+.relato-nome {
+    color: var(--cor-primaria);
+    font-size: 16px;
+}
+
+.relato-funcao {
+    color: var(--cor-secundaria);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.rodape {
+    background-color: var(--cor-sexta);
+    text-align: center;
+    width: auto;
+    padding: 1em;
+}
+
+.rodape__titulo {
+    color: var(--cor-primaria);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.rodape__texto {
+    color: var(--cor-secundaria);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.rodape__caixa {
+    display: flex;
+    justify-content: center;
+    margin: 3em 0;
+}
+
+.rodape__email {
+    border-radius: 1em;
+    border: solid var(--cor-sete) 0.05em;
+    width: 20%;
+}
+
+.rodape__email::placeholder {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 1em;
+}
+
+.rodape__email-botao {
+    background-color: var(--cor-terciaria);
+    color: var(--branco);
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    text-decoration: none;
+}
+
+.rodape__copyright {
+    color: var(--cor-quinta);
+    font-size: 16px;
+    font-weight: 400;
+}
